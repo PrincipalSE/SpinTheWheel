@@ -40,4 +40,10 @@ public class CoinTest {
         Coin coin1 = new Coin();
         assertNotNull(coin1.getSide());
     }
+    @Test
+    public void coinSideTest()
+    {
+        Coin coin = new Coin();
+        coin.setSide(Coin.TypeOfSide.HEAD);
+    }
 }
