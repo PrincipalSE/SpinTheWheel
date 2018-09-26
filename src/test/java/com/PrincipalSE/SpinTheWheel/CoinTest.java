@@ -45,5 +45,6 @@ public class CoinTest {
     {
         Coin coin = new Coin();
         coin.setSide(Coin.TypeOfSide.HEAD);
+        assertTrue(coin.getSide() == Coin.TypeOfSide.HEAD);
     }
 }
