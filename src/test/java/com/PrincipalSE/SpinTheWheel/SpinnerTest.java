@@ -19,6 +19,7 @@ public class SpinnerTest {
     public void createSpinnerTest()
     {
         Spinner spinner2 = new Spinner(0);
+        assertNotNull(spinner2);
     }
 
 }
