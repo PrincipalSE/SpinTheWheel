@@ -67,6 +67,6 @@ public class Coin {
 
 
 
-    private enum TypeOfSide {HEAD, TAIL}
+    enum TypeOfSide {HEAD, TAIL}
 
 }
