@@ -54,7 +54,25 @@ public class Spinner {
         System.out.println("initialization complete, ready for the spin");
     }
 
+    /**
+     * Moves each coin on the wheel by the random number of positions
+     */
     public void spin(){
-        Collections.rotate(coins,new Random().nextInt(coins.size()));
+        int random = new Random().nextInt(coins.size());
+        Collections.rotate(coins,random);
+        System.out.println("\nAfter rotation is completed using random: "+random+"," +
+                " coin indexes are:");
+        for (int i=0; i<coins.size(); i++){
+            System.out.println("coin index number " +i+": "+coins.get(i).getSide());
+        }
+    }
+
+    /**
+     * Reveals user specified coin
+     * @param coinIndex user specified index of a coin
+     * @return HEAD or TAIL
+     */
+    public Coin.TypeOfSide reveal(int coinIndex){
+        return coins.get(coinIndex).getSide();
     }
 }
