@@ -82,13 +82,13 @@ public class Main {
 
         // Reveal one coin using index number specified by the user
         System.out.print("\nPlease enter the index of the coin that you want to reveal: ");
-        reavealIndex = scnr.nextInt();
-        if (reavealIndex >= numOfCoins){
+        revealIndex = scnr.nextInt();
+        if (revealIndex >= numOfCoins){
             System.out.println("Invalid Input!");
             System.exit(0);
         }else {
-            System.out.println("Revealed coin with index "+reavealIndex+": "
-                    +spinner.reveal(reavealIndex));
+            System.out.println("Revealed coin with index "+revealIndex+": "
+                    +spinner.reveal(revealIndex));
         }
     }
 }
