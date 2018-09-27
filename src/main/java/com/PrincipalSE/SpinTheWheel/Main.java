@@ -37,7 +37,7 @@ public class Main {
      * rotates the wheel once and reveals one coin that user specifies.
      */
     public static void main(String[] args) {
-        int numOfCoins, numToReveal, numOfSpin;
+        int numOfCoins, numToReveal, numOfSpin, revealIndex;
 
         System.out.print("Enter number of coin: ");
         Scanner scnr = new Scanner(System.in);
