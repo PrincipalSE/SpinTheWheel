@@ -32,7 +32,9 @@ import java.util.Scanner;
  */
 public class Main {
     /**
-     * Accepts user inputs and creates a Spinner object using one of the inputs
+     * Driver.
+     * Accepts user inputs and creates a Spinner object using one of the inputs,
+     * rotates the wheel once and reveals one coin that user specifies.
      */
     public static void main(String[] args) {
         int numOfCoins, numToReveal, numOfSpin;
