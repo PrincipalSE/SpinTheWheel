@@ -36,6 +36,8 @@ import java.util.Random;
 public class Spinner {
 
     public CircularList<Coin> coins;
+
+    public Spinner (int [] coins){}
     /**
       * Constructs a spinner object which initializes CircularList with the
       * number of coins provided by the user input
