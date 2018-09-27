@@ -42,19 +42,32 @@ public class Spinner {
       */
     public Spinner (int numOfCoins){
         coins = new CircularList<>(numOfCoins);
-        System.out.println("Initializing the game with random coins...");
         for (int i = 0; i < numOfCoins; i++){
             coins.add(i,new Coin());
         }
+        /*
         // tests how many and what coins were generated. Will be removed before submission
-        // or should it stay ?
+        // or should it stay ? Should probably be removed or toggleable by an option
         for (int i=0; i<coins.size(); i++){
             System.out.println("coin index number " +i+": "+coins.get(i).getSide());
         }
         System.out.println("initialization complete, ready for the spin");
+        */
     }
 
-    public void spin(){
+    public void spin(int n){
+        Collections.rotate(coins, n);
+    }
+
+    public void randomSpin(){
         Collections.rotate(coins,new Random().nextInt(coins.size()));
+    }
+    
+    
+    /**
+     * Takes a number, n, and reveals the current state of the coin at that position
+     */
+    public int reveal(int n){
+        return 0;   
     }
 }

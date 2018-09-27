@@ -21,5 +21,16 @@ public class SpinnerTest {
         Spinner spinner2 = new Spinner(0);
         assertNotNull(spinner2);
     }
+    
+    @Test
+    public void testReveal() {
+        Spinner spin = new Spinner(1);
+        
+    }
 
+    @Test
+    public void testSpin(){
+        Spinner spin = new Spinner(2);
+        
+    }
 }
