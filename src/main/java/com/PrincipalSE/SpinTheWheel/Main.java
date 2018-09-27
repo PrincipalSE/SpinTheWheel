@@ -74,5 +74,7 @@ public class Main {
         // Creates a spinner object
         Spinner spinner = new Spinner(numOfCoins);
 
+        spinner.spin();
+        System.out.println("Rotated once");
     }
 }
