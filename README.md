@@ -1,3 +1,8 @@
+
+
+![Maven metadata URL](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/google/code/gson/gson/maven-metadata.xml.svg)
+
+
 Requirements:
   Java SDK 8.0
   Maven 3.0 or later
