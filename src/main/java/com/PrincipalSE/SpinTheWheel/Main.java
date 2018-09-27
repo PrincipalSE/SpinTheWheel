@@ -77,7 +77,7 @@ public class Main {
         Spinner spinner = new Spinner(numOfCoins);
         
         //Rotates once
-        spinner.spin();
+        //spinner.spin();
         System.out.println("Rotated once");
 
         // Reveal one coin using index number specified by the user

@@ -36,6 +36,8 @@ import java.util.Random;
 public class Spinner {
 
     public CircularList<Coin> coins;
+
+    public Spinner (int [] coins){}
     /**
       * Constructs a spinner object which initializes CircularList with the
       * number of coins provided by the user input
@@ -55,42 +57,18 @@ public class Spinner {
         */
     }
 
-<<<<<<< HEAD
     public void spin(int n){
         Collections.rotate(coins, n);
     }
 
     public void randomSpin(){
         Collections.rotate(coins,new Random().nextInt(coins.size()));
-=======
-    /**
-     * Moves each coin on the wheel by the random number of positions
-     */
-    public void spin(){
-        int random = new Random().nextInt(coins.size());
-        Collections.rotate(coins,random);
-        System.out.println("\nAfter rotation is completed using random: "+random+"," +
-                " coin indexes are:");
-        for (int i=0; i<coins.size(); i++){
-            System.out.println("coin index number " +i+": "+coins.get(i).getSide());
-        }
     }
 
-    /**
-     * Reveals user specified coin
-     * @param coinIndex user specified index of a coin
-     * @return HEAD or TAIL
-     */
-    public Coin.TypeOfSide reveal(int coinIndex){
-        return coins.get(coinIndex).getSide();
->>>>>>> 00e3a75b93c67ba668cf63a2694ea196b327df0f
-    }
-    
-    
     /**
      * Takes a number, n, and reveals the current state of the coin at that position
      */
     public int reveal(int n){
-        return 0;   
+        return coins.get(n).getSide();   
     }
 }

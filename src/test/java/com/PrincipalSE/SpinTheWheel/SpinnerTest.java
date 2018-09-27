@@ -20,17 +20,28 @@ public class SpinnerTest {
     {
         Spinner spinner2 = new Spinner(0);
         assertNotNull(spinner2);
-    }
-    
+    }   
     @Test
     public void testReveal() {
-        Spinner spin = new Spinner(1);
-        
+        Spinner spinner = new Spinner(4);
     }
 
     @Test
     public void testSpin(){
-        Spinner spin = new Spinner(2);
-        
+        Spinner spinner = new Spinner(2);
+        spinner.spin(Integer.MAX_VALUE);
+        spinner.spin(-1);
+        spinner.spin(0);
+    }
+    @Test
+    public void testSpinOnce(){
+        for(int i = 0; i < 100; i ++){
+            Spinner spinner = new Spinner(2);
+            int ind0 = spinner.reveal(0);
+            int ind1 = spinner.reveal(1);
+            spinner.spin(1);
+            assertEquals(ind0, spinner.reveal(1));
+            assertEquals(ind1, spinner.reveal(0));
+        }
     }
 }
