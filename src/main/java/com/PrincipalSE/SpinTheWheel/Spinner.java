@@ -38,6 +38,7 @@ public class Spinner {
     public CircularList<Coin> coins;
 
     public Spinner (int [] coins){}
+
     /**
       * Constructs a spinner object which initializes CircularList with the
       * number of coins provided by the user input
@@ -58,11 +59,13 @@ public class Spinner {
     }
 
     public void spin(int n){
-        Collections.rotate(coins, n);
+        if(coins.size() > 0)
+          Collections.rotate(coins, n);
     }
 
     public void randomSpin(){
-        Collections.rotate(coins,new Random().nextInt(coins.size()));
+        if(coins.size() > 0)
+          Collections.rotate(coins,new Random().nextInt(coins.size()));
     }
 
     /**
