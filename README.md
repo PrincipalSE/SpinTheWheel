@@ -75,6 +75,6 @@ java -jar <jar file name>
 
 # Credits
 
-[Tarvis Rebhan](https://github.com/tgolnoft)</br> [Egor Muscat](https://github.com/Jbladevr)</br>[Justin Wu]()</br>[Emenu Dobamo](https://github.com/emenuDobamo)
+[Tarvis Rebhan](https://github.com/tgolnoft)</br> [Egor Muscat](https://github.com/Jbladevr)</br>[Justin Wu](https://github.com/Hindenburg120583)</br>[Emenu Dobamo](https://github.com/emenuDobamo)
 
 
