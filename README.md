@@ -15,12 +15,13 @@ a little bit about the project
 
 # Table Of Content
 
-* [Introduction](#Introduction)
-* [Requirements](#Requirements)
-* [Getting Started](#Getting-Started)
-  * Requirements
-  * How to install
-  * Usage
+* [Introduction](#introduction)
+* [Getting Started](#getting-started)
+  * [Requirements](#requirements)
+  * [Building](#building)
+  * [Usage](#usage)
+* [Documentation](#documentation)
+* [Credit](#credits)
 
 
 # Introduction
