@@ -67,12 +67,11 @@ public class Spinner {
         if(coins.size() > 0)
           Collections.rotate(coins,new Random().nextInt(coins.size()));
     }
-    
-    
+
     /**
      * Takes a number, n, and reveals the current state of the coin at that position
      */
     public int reveal(int n){
-        return 0;   
+        return coins.get(n).getSide();   
     }
 }
