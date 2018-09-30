@@ -17,8 +17,6 @@
          OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
-
-
 package com.PrincipalSE.SpinTheWheel;
 import java.util.Random;
 /** First version of a game. Game accepts user input for number of coins,
@@ -31,42 +29,52 @@ import java.util.Random;
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
 public class Coin {
+    static final String [] sides = {"TAILS", "HEADS"};
 
-
-    private TypeOfSide side;
+    private int side;
 
     /**
-     * Constructs a Coin object with the value of either HEAD or TAIL.
+     * Constructs a Coin object with a random starting value of either 1 (HEADS) or 0 (TAILS).
      */
     public Coin (){
       Random  rnd = new Random();
       double random = rnd.nextDouble();
       if (random > 0.5){
-          side = TypeOfSide.HEAD;
+          side = 1;
       }
       else {
-          side = TypeOfSide.TAIL;
+          side = 0;
       }
+    }
+    /**
+     * Constructs a Coin object with a user defined starting value of either 1 (HEADS) or 0 (TAILS).
+     */
+    public Coin(int n) throws IllegalArgumentException {
+      if (n < 0 || n > 1) 
+          throw new IllegalArgumentException("n must be 0 or 1");
+      side = n;
     }
 
     /**
-     * This method not used in this version.
+     * 
      */
-    // dont need set yet but I guess we can keep it as part of "get, set"
-    public  void setSide(TypeOfSide side){
+    public  void setSide(int side){
         this.side = side;
+    }
+
+    /**
+     * Accesses the coin to see what side it is
+     * @return 0 for TAILS, 1 for HEADS.
+     */
+    public int getSide(){
+        return side;
     }
 
     /**
      * Accesses the coin to see what side it is
      * @return HEADS or TAILS.
      */
-    public TypeOfSide getSide(){
-        return side;
+    public String getSideString() throws IllegalArgumentException {
+      return sides[side];
     }
-
-
-
-    enum TypeOfSide {HEAD, TAIL}
-
 }

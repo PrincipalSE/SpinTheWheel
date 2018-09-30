@@ -30,6 +30,7 @@ import java.util.ArrayList;
  @author
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
+@SuppressWarnings("serial")
 public class CircularList<E> extends ArrayList<E> {
     public CircularList(int initialCapacity) {
         super(initialCapacity);
