@@ -27,6 +27,7 @@ a little bit about the project
 # Introduction
 
 
+
 # Getting Started
 
   ### Requirements
@@ -72,6 +73,8 @@ java -jar <jar file name>
 ~~~
 
 # Documentation
+* Quick tutorial
+* [wiki](https://github.com/PrincipalSE/SpinTheWheel/wiki)
 
  # Contributors
 
