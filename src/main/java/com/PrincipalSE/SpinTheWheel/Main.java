@@ -75,20 +75,6 @@ public class Main {
 
         // Creates a spinner object
         Spinner spinner = new Spinner(numOfCoins);
-        
-        //Rotates once
-        spinner.spin();
-        System.out.println("Rotated once");
-
-        // Reveal one coin using index number specified by the user
-        System.out.print("\nPlease enter the index of the coin that you want to reveal: ");
-        revealIndex = scnr.nextInt();
-        if (revealIndex >= numOfCoins){
-            System.out.println("Invalid Input!");
-            System.exit(0);
-        }else {
-            System.out.println("Revealed coin with index "+revealIndex+": "
-                    +spinner.reveal(revealIndex));
-        }
+        System.out.println("Created Spinner");
     }
 }
