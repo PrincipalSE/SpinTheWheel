@@ -21,7 +21,7 @@ a little bit about the project
   * [Building](#building)
   * [Usage](#usage)
 * [Documentation](#documentation)
-* [Credit](#credits)
+* [Contributors](#contributors)
 
 
 # Introduction
@@ -73,7 +73,7 @@ java -jar <jar file name>
 
 # Documentation
 
-# Credits
+ # Contributors
 
 [Tarvis Rebhan](https://github.com/tgolnoft)</br> [Egor Muscat](https://github.com/Jbladevr)</br>[Justin Wu](https://github.com/Hindenburg120583)</br>[Emenu Dobamo](https://github.com/emenuDobamo)
 
