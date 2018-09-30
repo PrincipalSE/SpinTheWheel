@@ -1,7 +1,8 @@
 
 ![logo](https://projecthelping.org/wp-content/uploads/2017/11/Your-Logo-here.png)
 
-![Maven metadata URL](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/google/code/gson/gson/maven-metadata.xml.svg)
+![Maven](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg)
+
 
 # Spin The Wheel
 a little bit about the project
