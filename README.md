@@ -9,8 +9,7 @@
 
 
 # Spin The Wheel
-a little bit about the project
-</p>
+Spin-the-Wheel Coin Matching Game
 
 
 # Table Of Content
