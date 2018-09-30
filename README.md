@@ -13,12 +13,18 @@ a little bit about the project
 * [Introduction](#Introduction)
 * [Requirements](#Requirements)
 * [Getting Started](#Getting-Started)
+  * Requirements
+  * How to install
+  * Usage
 * [License](#License)
 
 
 # Introduction
 
-# Requirements
+
+# Getting Started
+
+  ### Requirements
   ~~~
   Java SDK 8.0
   Maven 3.0 or later
@@ -32,10 +38,7 @@ test results will be displayed in the command line
 The jar file has both the library for the classes as well as a main function runnable with:
 java -jar SpinTheWheel-1.0.jar
 
-
-# Getting Started
-
-### How to install it
+### How to install
 ~~~
 git clone https://github.com/PrincipalSE/SpinTheWheel.git
 cd SpinTheWheel
@@ -45,12 +48,17 @@ cd SpinTheWheel
 ### Usage
 
 
-# Credits</p>[Tarvis Rebhan](https://github.com/tgolnoft) </p>[Egor Muscat](https://github.com/Jbladevr)</P>[Justin Wu]()</p>[Emenu Dobamo](https://github.com/emenuDobamo)
+# Credits
+</p>
+[Tarvis Rebhan](https://github.com/tgolnoft) </p>[Egor Muscat](https://github.com/Jbladevr)</P>[Justin Wu]()</p>[Emenu Dobamo](https://github.com/emenuDobamo)
 
 
 
 
  # License
+ 
+ The MIT License (MIT)
+
  Copyright (c) 2018 Principal Software Engineers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
