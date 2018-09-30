@@ -34,7 +34,7 @@ public class Coin {
     private int side;
 
     /**
-     * Constructs a Coin object with the value of either HEAD or TAIL.
+     * Constructs a Coin object with a random starting value of either 1 (HEADS) or 0 (TAILS).
      */
     public Coin (){
       Random  rnd = new Random();
@@ -46,7 +46,9 @@ public class Coin {
           side = 0;
       }
     }
-
+    /**
+     * Constructs a Coin object with a user defined starting value of either 1 (HEADS) or 0 (TAILS).
+     */
     public Coin(int n) throws IllegalArgumentException {
       if (n < 0 || n > 1) 
           throw new IllegalArgumentException("n must be 0 or 1");
