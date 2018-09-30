@@ -49,8 +49,8 @@ cd SpinTheWheel
 
 
 # Credits
-</p>
-[Tarvis Rebhan](https://github.com/tgolnoft) </p>[Egor Muscat](https://github.com/Jbladevr)</P>[Justin Wu]()</p>[Emenu Dobamo](https://github.com/emenuDobamo)
+
+[Tarvis Rebhan](https://github.com/tgolnoft)</br> [Egor Muscat](https://github.com/Jbladevr)</br>[Justin Wu]()</br>[Emenu Dobamo](https://github.com/emenuDobamo)
 
 
 
