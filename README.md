@@ -21,6 +21,8 @@ a little bit about the project
   * [Building](#building)
   * [Usage](#usage)
 * [Documentation](#documentation)
+  * Quick tutorial
+  * wiki
 * [Contributors](#contributors)
 
 
@@ -36,16 +38,6 @@ a little bit about the project
  * [Java SDK 8.0](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
  * [Maven 3.0 or later](https://maven.apache.org/download.cgi)
   
-
-  
-At the root directory of the project enter into a command line: mvn package
-
-Jar files will be placed into the folder target/
-test results will be displayed in the command line
-
-The jar file has both the library for the classes as well as a main function runnable with:
-java -jar SpinTheWheel-1.0.jar
-
 
 
 ### Building
@@ -73,7 +65,7 @@ java -jar <jar file name>
 ~~~
 
 # Documentation
-* Quick tutorial
+* [Quick tutorial](https://github.com/PrincipalSE/SpinTheWheel/wiki/Quick-tutorial)
 * [wiki](https://github.com/PrincipalSE/SpinTheWheel/wiki)
 
  # Contributors
