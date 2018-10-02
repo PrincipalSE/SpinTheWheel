@@ -23,10 +23,12 @@ public class SpinnerTest {
     }   
     @Test
     public void testCircularArray() {
-        Spinner spinner = new Spinner(4);
-        int ind0 = spinner.reveal(0);
-        int ind1 = spinner.reveal(4);
-        assertEquals(ind0,ind1);
+        for(int i = 0; i < 100; i ++) {
+            Spinner spinner = new Spinner(4);
+            int ind0 = spinner.reveal(0);
+            int ind1 = spinner.reveal(4);
+            assertEquals(ind0,ind1);
+        }
     }
 
     @Test
