@@ -33,7 +33,7 @@ public class SpinnerTest {
     @Test
     public void testReveal(){
         Spinner spinner = new Spinner(2);
-        spinner.coins.get(0).set(1);
+        spinner.coins.get(0).setSide(1);
         assertEquals( 1, spinner.reveal(0));
     }
     @Test
