@@ -22,8 +22,11 @@ public class SpinnerTest {
         assertNotNull(spinner2);
     }   
     @Test
-    public void testReveal() {
+    public void testCircularArray() {
         Spinner spinner = new Spinner(4);
+        int ind0 = spinner.reveal(0);
+        int ind1 = spinner.reveal(4);
+        assertEquals(ind0,ind1);
     }
 
     @Test
