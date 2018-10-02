@@ -30,7 +30,12 @@ public class SpinnerTest {
             assertEquals(ind0,ind1);
         }
     }
-
+    @Test
+    public void testReveal(){
+        Spinner spinner = new Spinner(2);
+        spinner.coins.get(0).set(1);
+        assertEquals( 1, spinner.reveal(0));
+    }
     @Test
     public void testSpin(){
         Spinner spinner = new Spinner(2);
