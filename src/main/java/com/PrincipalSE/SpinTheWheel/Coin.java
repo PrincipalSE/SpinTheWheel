@@ -29,53 +29,54 @@ import java.util.Random;
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
 public class Coin {
-    static final String [] sides = {"TAILS", "HEADS"};
+    static final String[] sides = {"TAILS", "HEADS"};
 
     private int side;
 
     /**
      * Constructs a Coin object with the value of either HEAD or TAIL.
      */
-    public Coin (){
-      Random  rnd = new Random();
-      double random = rnd.nextDouble();
-      if (random > 0.5){
-          side = 1;
-      }
-      else {
-          side = 0;
-      }
+    public Coin() {
+        Random rnd = new Random();
+        double random = rnd.nextDouble();
+        if (random > 0.5) {
+            side = 1;
+        } else {
+            side = 0;
+        }
     }
 
     public Coin(int n) throws IllegalArgumentException {
-      if (n < 0 || n > 1) 
-          throw new IllegalArgumentException("n must be 0 or 1");
-      side = n;
+        if (n < 0 || n > 1)
+            throw new IllegalArgumentException("n must be 0 or 1");
+        side = n;
     }
 
     /**
-     * 
+     *
      */
-    public  void setSide(int side){
+    public void setSide(int side) {
         this.side = side;
     }
 
     /**
      * Accesses the coin to see what side it is
+     *
      * @return 0 for TAILS, 1 for HEADS.
      */
-    public int getSide(){
+    public int getSide() {
         return side;
     }
 
     /**
      * Accesses the coin to see what side it is
+     *
      * @return HEADS or TAILS.
      */
     public String getSideString() throws IllegalArgumentException {
-      return sides[side];
+        return sides[side];
     }
-        
+
     public void flip() {
         if (this.getSide() == 1) {
             this.setSide(0);
@@ -83,4 +84,5 @@ public class Coin {
             this.setSide(1);
         }
 
+    }
 }
