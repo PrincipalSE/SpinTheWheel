@@ -74,4 +74,12 @@ public class Spinner {
     public int reveal(int n){
         return coins.get(n).getSide();   
     }
+    public void flip(int n){
+
+        if (coins.get(n).getSide() == 1) {
+            coins.get(n).setSide(0);
+        } else {
+            coins.get(n).setSide(1);
+        }
+    }
 }
