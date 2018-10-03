@@ -75,5 +75,12 @@ public class CoinTest {
         thrown.expect(IllegalArgumentException.class);
         Coin coin = new Coin(-1);
     }
+    @Test
+    public void coinFlipTest(){
+        Coin coin = new Coin();
+        coin.setSide(1); // set the side to HEADS
+        coin.flip(); // flip the coin
+        assertTrue(coin.getSide() != 1); // passes if coin is not Head after flip
+    }
     
 }
