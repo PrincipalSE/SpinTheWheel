@@ -75,4 +75,12 @@ public class Coin {
     public String getSideString() throws IllegalArgumentException {
       return sides[side];
     }
+        
+    public void flip() {
+        if (this.getSide() == 1) {
+            this.setSide(0);
+        } else {
+            this.setSide(1);
+        }
+
 }
