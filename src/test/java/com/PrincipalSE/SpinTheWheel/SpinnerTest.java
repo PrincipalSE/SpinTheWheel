@@ -54,4 +54,11 @@ public class SpinnerTest {
             assertEquals(ind1, spinner.reveal(0));
         }
     }
+    @Test
+    public void testFlip(){
+        Spinner spinner = new Spinner(5);
+        spinner.coins.get(4).setSide(1); // set the side of the index number 4th coin to HEADS
+        spinner.flip(4);
+        assertTrue(spinner.coins.get(4).getSide() != 1); // passes if coin is not Head after flip
+    }
 }
