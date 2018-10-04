@@ -34,7 +34,7 @@ public class Coin {
     private int side;
 
     /**
-     * Constructs a Coin object with the value of either 1 or 0.
+     * Constructs a Coin object with a random starting value of either 1 (HEADS) or 0 (TAILS).
      */
     public Coin() {
         Random rnd = new Random();
