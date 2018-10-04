@@ -71,4 +71,3 @@ java -jar <jar file name>
 
 [Tarvis Rebhan](https://github.com/tgolnoft)</br> [Egor Muscat](https://github.com/Jbladevr)</br>[Justin Wu](https://github.com/Hindenburg120583)</br>[Emenu Dobamo](https://github.com/emenuDobamo)
 
-
