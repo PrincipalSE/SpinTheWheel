@@ -1,15 +1,11 @@
 /*Copyright 2018 Principal Software Engineers
-
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software
         and associated documentation files (the "Software"), to deal in the Software without restriction,
         including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
          and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
          subject to the following conditions:
-
         The above copyright notice and this permission notice shall be included in all copies or substantial
          portions of the Software.
-
-
         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
         LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
         IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
@@ -26,15 +22,14 @@ import java.util.Scanner;
  *  of the game checks for invalid inputs, and initializes so the game is
  *  ready to play.
  @version
- Fall 2018 v0.3
+ Fall 2018 v0.7
  @author
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
 public class Main {
     /**
      * Driver.
-     * Accepts user inputs and creates a Spinner object using one of the inputs,
-     * rotates the wheel once and reveals one coin that user specifies.
+     * Accepts user inputs and creates a Spinner object using one of the inputs.
      */
     public static void main(String[] args) {
         int numOfCoins, numToReveal, numOfSpin, revealIndex;
@@ -75,20 +70,6 @@ public class Main {
 
         // Creates a spinner object
         Spinner spinner = new Spinner(numOfCoins);
-        
-        //Rotates once
-        //spinner.spin();
-        System.out.println("Rotated once");
-
-        // Reveal one coin using index number specified by the user
-        System.out.print("\nPlease enter the index of the coin that you want to reveal: ");
-        revealIndex = scnr.nextInt();
-        if (revealIndex >= numOfCoins){
-            System.out.println("Invalid Input!");
-            System.exit(0);
-        }else {
-            System.out.println("Revealed coin with index "+revealIndex+": "
-                    +spinner.reveal(revealIndex));
-        }
+        System.out.println("Created Spinner");
     }
 }
