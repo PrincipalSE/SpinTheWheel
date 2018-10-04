@@ -29,7 +29,7 @@ import java.util.Random;
  *  of the game checks for invalid inputs, and initializes so the game is
  *  ready to play.
  @version
- Fall 2018 v0.3
+ Fall 2018 v0.7
  @author
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
@@ -47,15 +47,20 @@ public class Spinner {
         coins = new CircularList<>(numOfCoins);
         for (int i = 0; i < numOfCoins; i++){
             coins.add(i,new Coin());
-        }
-        
+        }   
     }
-
+        
+    /**
+     * Spins the numbers in a CircularList by a specific number so it can be tested.
+     */
     public void spin(int n){
         if(coins.size() > 0)
           Collections.rotate(coins, n);
     }
-
+        
+    /**
+     * Spins the numbers in a CircularList by a by a random number.
+     */
     public void randomSpin(){
         if(coins.size() > 0)
           Collections.rotate(coins,new Random().nextInt(coins.size()));
@@ -67,6 +72,10 @@ public class Spinner {
     public int reveal(int n){
         return coins.get(n).getSide();   
     }
+        
+    /**
+     * Flips a coin with a specified index.
+     */
     public void flip(int n){
         coins.get(n).flip();
     }
