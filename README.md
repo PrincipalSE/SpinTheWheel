@@ -13,4 +13,4 @@ Jar files will be placed into the folder target/
 test results will be displayed in the command line
 
 The jar file has both the library for the classes as well as a main function runnable with:
-java -jar SpinTheWheel-1.0.jar
+java -jar SpinTheWheel-1.3.jar
