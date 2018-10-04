@@ -24,7 +24,7 @@ import java.util.Random;
  *  of the game checks for invalid inputs, and initializes so the game is
  *  ready to play.
  @version
- Fall 2018 v0.3
+ Fall 2018 v0.7
  @author
  Egor Muscat, Travis Rebhan, Justin Wu, Emenu Dobamo.
  */
