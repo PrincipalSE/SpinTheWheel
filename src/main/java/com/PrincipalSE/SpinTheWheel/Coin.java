@@ -47,6 +47,8 @@ public class Coin {
     }
     /**
      * Constructs a Coin object for testing purposes.
+     * @param n Whether the coin is a heads(1) or tails(0). Test will
+     * throw an exception if neither a one or zero is input
      */
     public Coin(int n) throws IllegalArgumentException {
         if (n < 0 || n > 1)
@@ -56,6 +58,7 @@ public class Coin {
 
     /**
      * Changes the side of a coin.
+     * @param side Must be one for heads or zero for tails.
      */
     public void setSide(int side) {
         this.side = side;
@@ -79,6 +82,9 @@ public class Coin {
         return sides[side];
     }
 
+    /**
+     * Changes Coin from 'Heads' to 'Tails' or vice versa
+     */
     public void flip() {
         if (this.getSide() == 1) {
             this.setSide(0);
