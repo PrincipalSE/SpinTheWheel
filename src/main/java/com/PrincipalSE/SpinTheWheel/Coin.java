@@ -34,7 +34,7 @@ public class Coin {
     private int side;
 
     /**
-     * Constructs a Coin object with the value of either HEAD or TAIL.
+     * Constructs a Coin object with the value of either 1 or 0.
      */
     public Coin() {
         Random rnd = new Random();
@@ -45,7 +45,9 @@ public class Coin {
             side = 0;
         }
     }
-
+    /**
+     * Constructs a Coin object for testing purposes.
+     */
     public Coin(int n) throws IllegalArgumentException {
         if (n < 0 || n > 1)
             throw new IllegalArgumentException("n must be 0 or 1");
@@ -53,7 +55,7 @@ public class Coin {
     }
 
     /**
-     *
+     * Changes the side of a coin.
      */
     public void setSide(int side) {
         this.side = side;
